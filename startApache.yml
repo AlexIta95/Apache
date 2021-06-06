@@ -1,0 +1,17 @@
+  GNU nano 5.2                    semaphoreRun                                 
+---
+- name : Apache stop
+
+  hosts : all
+
+  become : true
+
+
+  tasks :
+
+    - name : Stop apache
+
+      service:
+
+        name: apache2
+        state: started
